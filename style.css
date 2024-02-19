@@ -1,4 +1,4 @@
-/* Font */
+/* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 
 /* Global variables */
@@ -48,7 +48,7 @@ img {
 body {
   display: grid;
   place-content: center;
-  padding: 1.5rem;
+  padding-inline: 1.5rem;
 
   min-height: 100vh;
   min-width: 375px;
