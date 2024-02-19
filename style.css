@@ -3,7 +3,8 @@
 
 /* Global variables */
 :root {
-  --color-100: hsl(210, 46%, 95%);
+  --color-100: hsl(0, 0%, 100%);
+  --color-200: hsl(210, 46%, 95%);
   --color-300: hsl(212, 23%, 69%);
   --color-500: hsl(214, 17%, 51%);
   --color-700: hsl(217, 19%, 35%);
@@ -39,3 +40,32 @@ img {
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
+
+/* Global styles */
+
+body {
+  display: grid;
+  place-content: center;
+
+  min-height: 100vh;
+  min-width: 375px;
+
+  font-family: var(--font-family-default);
+  font-weight: var(--font-weight-reg);
+  font-size: 0.8125rem;
+  line-height: 1.54;
+  letter-spacing: 0.122px;
+  background-color: var(--color-200);
+  color: var(--color-500);
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.5;
+  letter-spacing: 0.2px;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-700);
+}
+
+/* Card styles */
