@@ -9,6 +9,8 @@
   --color-500: hsl(214, 17%, 51%);
   --color-700: hsl(217, 19%, 35%);
 
+  --color-shadow: rgba(201, 213, 225, 0.5);
+
   --font-family-default: "Manrope", sans-serif;
   --font-weight-reg: 500;
   --font-weight-bold: 700;
@@ -46,6 +48,7 @@ img {
 body {
   display: grid;
   place-content: center;
+  padding: 1.5rem;
 
   min-height: 100vh;
   min-width: 375px;
@@ -55,8 +58,9 @@ body {
   font-size: 0.8125rem;
   line-height: 1.54;
   letter-spacing: 0.122px;
-  background-color: var(--color-200);
+
   color: var(--color-500);
+  background-color: var(--color-200);
 }
 
 h1,
@@ -69,3 +73,10 @@ h3 {
 }
 
 /* Card styles */
+
+.card {
+  background-color: var(--color-100);
+  border-radius: 10px;
+  box-shadow: 0px 40px 40px -10px var(--color-shadow);
+  overflow: hidden;
+}
