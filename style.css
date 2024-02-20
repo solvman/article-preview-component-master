@@ -157,10 +157,18 @@ h3 {
 }
 
 .card__share__tooltip {
+  --scale: 0;
+
   position: absolute;
   inset: 0;
   display: flex;
   background-color: var(--color-500);
+  transform: scale(var(--scale));
+  transition: transform 0.3s cubic-bezier(0.5, 0, 0.1, 1);
+}
+
+.card__share__tooltip.active {
+  --scale: 1;
 }
 
 .tooltip__buttons ul {
