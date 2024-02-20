@@ -147,13 +147,16 @@ h3 {
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background-color: var(--color-200);
-  z-index: 1;
-}
-
-.card__share__button ion-icon {
   font-size: 1.125rem;
   color: var(--color-500);
+  background-color: var(--color-200);
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.card__share__button.active {
+  color: var(--color-100);
+  background-color: var(--color-500);
 }
 
 .card__share__tooltip {
@@ -162,7 +165,7 @@ h3 {
   position: absolute;
   inset: 0;
   display: flex;
-  background-color: var(--color-500);
+  background-color: var(--color-700);
   opacity: var(--scale);
   transform: scale(var(--scale));
   transition:

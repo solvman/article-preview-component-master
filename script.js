@@ -3,4 +3,5 @@ const shareTooltip = document.querySelector(".card__share__tooltip");
 
 shareButton.addEventListener("click", () => {
   shareTooltip.classList.toggle("active");
+  shareButton.classList.toggle("active");
 });
