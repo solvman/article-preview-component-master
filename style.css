@@ -37,6 +37,10 @@ button {
   cursor: pointer;
 }
 
+ul {
+  list-style: none;
+}
+
 /* Utility classes */
 
 .sr-only {
@@ -147,6 +151,17 @@ h3 {
 .card__share__button ion-icon {
   font-size: 1.125rem;
   color: var(--color-500);
+}
+
+.card__share__tooltip {
+  position: absolute;
+  display: flex;
+  background-color: var(--color-500);
+}
+
+.tooltip__buttons {
+  display: flex;
+  gap: 0.5rem;
 }
 
 @media screen and (min-width: 650px) {
