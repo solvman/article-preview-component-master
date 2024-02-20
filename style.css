@@ -25,9 +25,16 @@
   box-sizing: border-box;
 }
 
-img {
+img,
+ion-icon {
   display: block;
   max-width: 100%;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 /* Utility classes */
@@ -85,10 +92,15 @@ h3 {
   width: 100%;
   height: 200px;
   object-fit: cover;
+  object-position: center;
 }
 
 .card__wrapper {
   padding: 2.25rem 2rem 1.25rem;
+}
+
+.card__title {
+  font-size: 1rem;
 }
 
 .card__text {
@@ -119,7 +131,33 @@ h3 {
   justify-content: space-between;
 }
 
-button.card__share i {
+button.card__share {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--color-200);
+}
+
+button.card__share ion-icon {
   font-size: 1.125rem;
   color: var(--color-500);
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    display: flex;
+    max-width: 730px;
+  }
+
+  .card__img {
+    width: 285px;
+    height: auto;
+  }
+
+  .card__wrapper {
+    padding: 2rem 2.5rem;
+  }
 }
