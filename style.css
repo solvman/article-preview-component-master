@@ -146,7 +146,7 @@ button.card__share ion-icon {
   color: var(--color-500);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 650px) {
   .card {
     display: flex;
     max-width: 730px;
