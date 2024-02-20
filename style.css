@@ -160,4 +160,10 @@ button.card__share ion-icon {
   .card__wrapper {
     padding: 2rem 2.5rem;
   }
+
+  .card__title {
+    font-size: 1.25rem;
+    line-height: 1.4;
+    letter-spacing: 0.25px;
+  }
 }
