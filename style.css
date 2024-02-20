@@ -91,6 +91,10 @@ h3 {
   padding: 2.25rem 2rem 1.25rem;
 }
 
+.card__text {
+  margin: 0.75rem 0 2rem;
+}
+
 .card__author {
   display: flex;
   align-items: center;
@@ -104,8 +108,18 @@ h3 {
   object-fit: cover;
 }
 
+.card__author__name {
+  font-size: 0.81255rem;
+  line-height: 1.54;
+  letter-spacing: 0.122px;
+}
 .card__footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+button.card__share i {
+  font-size: 1.125rem;
+  color: var(--color-500);
 }
