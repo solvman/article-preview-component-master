@@ -134,7 +134,7 @@ h3 {
   justify-content: space-between;
 }
 
-button.card__share {
+.card__share__button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -144,7 +144,7 @@ button.card__share {
   background-color: var(--color-200);
 }
 
-button.card__share ion-icon {
+.card__share__button ion-icon {
   font-size: 1.125rem;
   color: var(--color-500);
 }
