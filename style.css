@@ -131,6 +131,7 @@ h3 {
   letter-spacing: 0.122px;
 }
 .card__footer {
+  position: relative;
   padding-top: 1rem;
   padding-bottom: 1.25rem;
   display: flex;
@@ -139,6 +140,7 @@ h3 {
 }
 
 .card__share__button {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -146,6 +148,7 @@ h3 {
   height: 32px;
   border-radius: 50%;
   background-color: var(--color-200);
+  z-index: 1;
 }
 
 .card__share__button ion-icon {
@@ -155,11 +158,12 @@ h3 {
 
 .card__share__tooltip {
   position: absolute;
+  inset: 0;
   display: flex;
   background-color: var(--color-500);
 }
 
-.tooltip__buttons {
+.tooltip__buttons ul {
   display: flex;
   gap: 0.5rem;
 }
